@@ -1,0 +1,49 @@
+//Program to write explain different types of Inheritances using classes.
+
+pckage Tasks;
+  class Animal{  //parent class
+     void eat() {
+    	 System.out.println("Animals eat");
+       }
+     }
+  // Single level inheritance
+  class Dog extends Animal{   // Dog is been extended from Animal(parent class)
+	  void bark() {
+		  System.out.println("Dogs Bark");
+	  }
+    }
+  // Multilevel inheritance 
+  class puppy extends Dog{    // Puppy is been extended from Dog(child class)
+	  void play() {
+		  System.out.println("Puppy plays");
+	  }
+    }
+  class Cat extends  Animal{   // cat is been extended from Animal(parent class)
+	    void meow() {
+	    	System.out.println("Cat meow");
+	    }
+  }
+  		//Main method 
+public class Q1 {
+
+	public static void main(String[] args) {
+		// Object creation and method calling
+		
+	      Dog d=new Dog();
+	      d.eat();
+	      d.bark();
+	      System.out.println();
+	      
+	      puppy p=new puppy() ;
+	    	  p.eat();
+	    	  p.bark();
+	    	  p.play();
+	    	  System.out.println();
+	     
+	    Cat c=new Cat();
+	     c.eat();
+	     c.meow();
+
+	}
+
+}
