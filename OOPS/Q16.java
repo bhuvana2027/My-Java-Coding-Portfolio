@@ -1,25 +1,30 @@
+//Program to Show Usage of Static keyword in Class
 package Tasks;
-class student1{
-	private String name="Bhuvana";
-	int age=21;
-	protected String college="KITS";
-	public String location="Kakinada";
-	void display() {
-		System.out.println("Name= "+name);
-		System.out.println("Age= "+age);
-		System.out.println("College= "+college);
-		System.out.println("Location= "+location);
-	}
+class Student {
+
+    static String college = "Kits";
+    static String location = "Kakinada";
+
+    void display() {
+
+        System.out.println("college= "+college);
+        System.out.println("Location= "+location);
+    }
+}
 
 public class Q16 {
 
-	public static void main(String[] args) {
-		student1 s=new student1();
-	    s.display();
-	    System.out.println(s.location);
-	    System.out.println(s.age);
-	    System.out.println(s.college);
+    public static void main(String[] args) {
 
-	}
-}
+        Student s1 = new Student();
+        Student s2 = new Student();
+
+        System.out.print("student1:");
+        s1.display();
+        
+        System.out.println();
+
+        System.out.print("student2 :");
+        s2.display();
+    }
 }
